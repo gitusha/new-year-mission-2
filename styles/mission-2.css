@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../images/banner/banner3.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 3% 5%;
+    justify-content:space-between ;
+    align-items: center;
+}
+nav h3{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.nav-menu{
+    flex: 1;
+    text-align: right;
+}
+.nav-menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 12px;
+    position: relative;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.nav-menu ul li::after{
+    content: '';
+    width: px;
+    height: 5px;
+    background: black;
+    display: block;
+    margin: auto;
+    position: absolute;
+    bottom: -5px;
+    transition: .5s;
+}
+.nav-menu ul li:hover::after{
+width: 100%;
+}
+.titledescription{
+    position: absolute;
+width: 525px;
+height: 228px;
+left: 845px;
+top: 216px;
+text-align: right;
+
+color: #FFFFFF;
+}
+.titledescription h1{
+    font-size: 60px;
+}
+.titledescription p{
+    font-weight: 400;
+font-size: 16px;
+}
+.titledescription a{
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: 2px solid white;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    padding: 13px 30px;
+    font-size: 14px;
+    top: 150px;
+} 
+.titledescription a:hover{
+    background-color: green;
+    border: 2px solid black;
+    transition: 1s;
+}
+
+
+
+/* about me  */
+.row{
+    display: flex;
+    margin-top: 5%;
+    justify-content:space-between ;
+}
+.about-me{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.about-me h1{
+    text-decoration: underline;
+}
+
+
+.about-me-col{
+    flex: 45%;
+    border-radius: 10px;
+    margin-bottom: 4%;
+}
+
+.about-me-col img{
+    width: 80%;
+    border-radius: 15%;
+}
+
+.about-me-col h2{
+    margin-top: 14px;
+    margin-bottom: 14px;
+    text-align: left;
+}
+.about-me-col p{
+    color: #777;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 12px;
+    text-align: left;
+}
+
+/* my skills section */
+.skills{
+width: 50%;
+margin: auto;
+
+padding-top: 100px;
+background: #fff3f4;
+}
+.skills h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.skills-col{
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 4%;
+}
+
+.skills-col h2{
+    margin-bottom: 15px;
+    text-align: left;
+    list-style: none;
+    padding: 12px;
+}
+
+
+.skills-col p{
+    color: #777777;
+    font-weight: 300;
+    padding: 12px;
+    font-size: 15px;
+    line-height: 20px;
+}
+.skills-col li{
+    list-style: none;
+    margin-top: 20px 0;
+}
+.skills-col .bar{
+    display: block;
+    height: 2px;
+    border: 1px solid rgb(0,0,0,0.3);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #d4def2;
+}
+
+.skills-col .bar span{
+    height: 3px;
+    float: left;
+    background: rgb(7, 204, 99);
+}
+
+
+.html{
+    width:100% ;
+    animation: html 2s;
+}
+.css{
+    width:40% ;
+    animation: css 2s;
+}
+.javascript{
+    width:50% ;
+    animation: javascript 2s;
+}
+.Cprogramming{
+    width:85% ;
+    animation: Cprogramming 2s;
+}
+.jQuery{
+    width:10% ;
+    animation: jQery 2s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes Cprogramming{
+    0%{
+        width: 85%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes jQuery{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 10%;
+    }
+}
+
+
+
+/* 4th section */
+
+.contaimer{
+    width: 100%;
+height: 100vh;
+background: url('../images/watch.png');
+background-position: center;
+background-size: cover;
+position: relative;
+position: absolute;
+width: 1140px;
+height: 300px;
+left: 230px;
+top: 2221.96px;
+
+background: linear-gradient(90deg, #005FAC 0%, rgba(0, 95, 172, 0) 100%);
+border-radius: 8px;
+
+}
+.footer{
+    width: 80%;
+background: #242624;
+margin: auto;
+padding: 30px 20px;
+
+}
+.footer-collum{
+    width: 30%;
+    padding: 0 15px;
+    t
+}
+.footer-collum h1{
+    text-decoration: underline;
+}
+
+.footer-collum h1{
+    font-size: 17px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-collum h1::after{
+    content: '';
+position: absolute;
+left: 0;
+bottom: -10px;
+background-color: #e91e63;
+height:3px;
+box-sizing: border-box;
+width: 55px;
+
+}
+.footer-collum ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-collum ul li a{
+    font-size: 15px;
+text-transform: uppercase;
+color: white;
+text-decoration: none;
+display: block;
+}
+.footer-collum ul li a:hover{
+   padding-left: 8px;
+   color: #ffe;
+}
+
+
+
+
+
+
+
+
+
